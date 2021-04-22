@@ -13,7 +13,8 @@ archives:
     - goos: windows
       format: zip
 checksum:
-  name_template: 'checksums.txt'
+  name_template: '{{ .ProjectName }}_{{ .Tag }}_SHA256SUMS'
+  algorithm: sha256
 snapshot:
   name_template: "terraform-provider-azuredevops"
 changelog:
